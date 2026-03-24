@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SketchCart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>SketchCart 🎨</h1>
+  <button onclick="openCart()">Cart 🛒 (<span id="cart-count">0</span>)</button>
+</header>
+
+<section class="products" id="product-list"></section>
+
+<!-- CART -->
+<div id="cart" class="cart">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+
+  <h3>Total: ₹<span id="total">0</span></h3>
+
+  <h3>Order Details</h3>
+  <input type="text" id="name" placeholder="Your Name">
+  <input type="text" id="address" placeholder="Address">
+  <input type="text" id="phone" placeholder="Phone">
+
+  <button onclick="placeOrder()">Place Order</button>
+  <button onclick="closeCart()">Close</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
